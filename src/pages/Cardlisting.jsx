@@ -1,41 +1,41 @@
 import { IoCard } from "react-icons/io5";
 import styled from "styled-components";
-import Card from "../component/Card/Card";
+
 
 
 const Cardlisting = ()=>{
     return(
      <Container>
         <Content>
-            <Card />
+          
             <button>
             <IoCard size={20} />
             </button>
             <h4>Order a Kuda card on the app with pickup and delivery options.</h4>
         </Content>
         <Content>
-            <Card />
+            
             <button>
             <IoCard size={20} />
             </button>
             <h4>Enjoy cashless payment options online and offline</h4>
         </Content>
         <Content>
-            <Card />
+            
             <button>
             <IoCard size={20} />
             </button>
             <h4>Pay your essential bills and buy gift cards easily.</h4>
         </Content>
         <Content>
-            <Card />
+          
             <button>
             <IoCard size={20} />
             </button>
             <h4>Get 25 free transfers to Nigerian banks every month.</h4>
         </Content>
         <Content>
-            <Card />
+         
             <button>
             <IoCard size={20} />
             </button>
