@@ -1,6 +1,6 @@
 import { IoCard } from "react-icons/io5";
 import styled from "styled-components";
-import Card from "../component/Card/card";
+import Card from "../component/Card/Card";
 
 
 const Cardlisting = ()=>{
