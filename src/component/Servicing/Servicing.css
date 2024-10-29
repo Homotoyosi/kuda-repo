@@ -1,0 +1,28 @@
+.card2{
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    }
+    .card2 img{
+        width: 35%;
+        height: 30%;
+        margin-left: 120px;
+    }
+    .servicebox{
+        height: auto;
+        width: 50%;
+        margin-top: 30px;
+        margin-left: 150px;
+    h1{
+        width: 71%;
+        font-size: 33px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: #40196D;
+    }
+    p{
+        width: 58%;
+        font-weight: 480;
+        font-size: 14px;
+    }
+    }

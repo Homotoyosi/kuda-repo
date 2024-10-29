@@ -1,0 +1,33 @@
+.card5{
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    }
+    .card5 img{
+        width: 40%;
+        height: 30%;
+        margin-right: 180px;
+    }
+    .savecontent{
+        height: auto;
+        width: 50%;
+        margin-top: 80px;
+    h1{
+        padding-left: 200px;
+        width: 56%;
+        font-size: 33px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: #40196D;
+    }
+    p{
+        padding-left: 200px;
+        width: 59%;
+        font-weight: 480;
+        font-size: 14px;
+    }
+    h4{
+        padding-left: 200px;
+        font-size: 14px;
+    }
+    }

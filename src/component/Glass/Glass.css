@@ -1,0 +1,28 @@
+.card6{
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    }
+    .card6 img{
+        width: 35%;
+        height: 30%;
+        margin-left: 180px;
+    }
+    .glassbox{
+        height: auto;
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 120px;
+    h1{
+        width: 60%;
+        font-size: 33px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: #40196D;
+    }
+    p{
+        width: 71%;
+        font-weight: 480;
+        font-size: 14px;
+    }
+    }
