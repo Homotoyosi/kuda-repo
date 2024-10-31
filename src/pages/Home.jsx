@@ -40,8 +40,8 @@ const Home =()=>{
 export default Home
 
 const Container = styled.div`
-width: 100%;
-height: 100vh;
+max-width: 100%;
+max-height: 100vh;
 @media (max-width: 800px) {
     width: 100%;
 }
@@ -134,7 +134,8 @@ h4{
 }
 `
 const ImageBox = styled.div`
-/* border: 1px solid purple; */
+border: 1px solid purple;
+background-color: red;
 margin-left: 50px;
 #image{
     width: 50%;
