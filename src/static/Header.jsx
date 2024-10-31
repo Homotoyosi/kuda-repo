@@ -51,13 +51,18 @@ height: 70px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-/* box-shadow: grey; */
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+@media (max-width: 800px) {
+    width: 100%;
+}
 `
 const LogoNav = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
+@media (max-width: 800px) {
+    margin-left: 0px;
+}
 `
 const Logo = styled.div`
 margin: 0px 80px 0px 80px;
@@ -70,7 +75,7 @@ gap: 30px;
 
 nav{
     display: flex;
-    color: #080108;
+    color: #40196D;
     span{
         margin-right: 3px;
         font-size: 13px;
@@ -93,12 +98,14 @@ margin-right: 20px
 const SignIn = styled.button`
 background-color: transparent;
 border: none;
+color: #40196D;
+font-weight: 600;
 @media (max-width: 800px) {
     display: none;
   }
 `
 const JoinBtn = styled.button`
-background-color: purple;
+background-color: #40196D;
 color: white;
 width: 120px;
 height: 40px;
@@ -109,7 +116,7 @@ border: none;
   }
 `
 const ConBtn = styled.button`
-background-color: lightgreen;
+background-color: #9BB4B8;
 outline: none;
 border: none;
 height: 40px;

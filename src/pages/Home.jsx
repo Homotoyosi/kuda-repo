@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import Image from "../assets/Screenshott.png"
+import Image from "../assets/download.svg"
+import secondimg from "../assets/download1.svg"
 import { IoLogoApple } from "react-icons/io5";
 import Googleplay from "../assets/icons8googleplay.png"
 
@@ -28,7 +29,8 @@ const Home =()=>{
                     </Buttons>
                 </TextBox>
                 <ImageBox>
-                    <img src={Image} alt="" />
+                    <img id="image" src={Image} alt="" />
+                    <img id="secondimg" src={secondimg} alt="" />
 
                 </ImageBox>
             </Wrapper>
@@ -40,11 +42,18 @@ export default Home
 const Container = styled.div`
 width: 100%;
 height: 100vh;
+@media (max-width: 800px) {
+    width: 100%;
+}
 `
 const Wrapper = styled.div`
 /* border: 1px solid red; */
 display: flex;
 padding-top: 50px;
+@media (max-width: 800px) {
+    display: block;
+    flex-direction: column;
+}
 `
 const TextBox = styled.div`
 /* border: 1px solid green; */
@@ -58,6 +67,11 @@ h1{
     line-height: 1.2;
     font-weight: 800;
     color: #40196D;
+    @media (max-width: 800px) {
+    padding-left: 10px;
+    width: 100%;
+    align-items: center;
+}
 }
 p{
     padding-left: 200px;
@@ -122,8 +136,28 @@ h4{
 const ImageBox = styled.div`
 /* border: 1px solid purple; */
 margin-left: 50px;
-img{
-    width: 70%;
+#image{
+    width: 50%;
     height: auto;
+    position: relative;
+    left: 110px;
+    top: 50px;
+}
+#secondimg{
+    width: 37%;
+    height: auto;
+    position: absolute;
+    left: 68%;
+    top: 100px;
+    transform: translateX(-50%);
+    animation: spin 25s linear infinite;
+    @keyframes spin {
+            0% {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            100% {
+                transform: translateX(-50%) rotate(360deg);
+            }
+}
 }
 `
