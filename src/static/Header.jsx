@@ -68,7 +68,11 @@ const Logo = styled.div`
 margin: 0px 80px 0px 80px;
 img{
     width: 80px;
-}`
+}
+@media (max-width: 800px) {
+    margin: 0px 80px 0px 30px; 
+}
+`
 const Navigation = styled.div`
 display: flex;
 gap: 30px;

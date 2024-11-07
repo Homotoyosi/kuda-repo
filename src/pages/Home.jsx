@@ -41,25 +41,27 @@ export default Home
 
 const Container = styled.div`
 max-width: 100%;
-max-height: 100vh;
+height: 100vh;
 @media (max-width: 800px) {
-    width: 100%;
+
 }
 `
 const Wrapper = styled.div`
-/* border: 1px solid red; */
 display: flex;
 padding-top: 50px;
 @media (max-width: 800px) {
-    display: block;
-    flex-direction: column;
+ display: block;
+ flex-direction: column;
 }
 `
 const TextBox = styled.div`
-/* border: 1px solid green; */
 height: auto;
 width: 50%;
 margin-top: 30px;
+@media (max-width: 800px) {
+    width: 90%;
+    margin-top: 0px;
+}
 h1{
     padding-left: 200px;
     width: 60%;
@@ -68,15 +70,20 @@ h1{
     font-weight: 800;
     color: #40196D;
     @media (max-width: 800px) {
-    padding-left: 10px;
+    padding-left: 0px;
     width: 100%;
-    align-items: center;
+    text-align: center;
 }
 }
 p{
     padding-left: 200px;
     width: 55%;
     font-weight: 500;
+    @media (max-width: 800px) {
+        padding-left: 20px;
+        width: 100%;
+        text-align: center;
+    }  
 }
 `
 const Buttons = styled.div`
@@ -84,7 +91,11 @@ display: flex;
 gap: 20px;
 margin-left: 200px;
 margin-top: 30px;
-.btn1{
+@media (max-width: 800px) {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.btn1{    
     display: flex;
     height: 50px;
     width: 160px;
@@ -134,17 +145,17 @@ h4{
 }
 `
 const ImageBox = styled.div`
-border: 1px solid purple;
-background-color: red;
-margin-left: 50px;
-#image{
+  margin-left: 50px;
+
+  #image {
     width: 50%;
     height: auto;
     position: relative;
     left: 110px;
     top: 50px;
-}
-#secondimg{
+  }
+
+  #secondimg {
     width: 37%;
     height: auto;
     position: absolute;
@@ -152,13 +163,28 @@ margin-left: 50px;
     top: 100px;
     transform: translateX(-50%);
     animation: spin 25s linear infinite;
+
     @keyframes spin {
-            0% {
-                transform: translateX(-50%) rotate(0deg);
-            }
-            100% {
-                transform: translateX(-50%) rotate(360deg);
-            }
-}
-}
-`
+      0% {
+        transform: translateX(-50%) rotate(0deg);
+      }
+      100% {
+        transform: translateX(-50%) rotate(360deg);
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    #secondimg {
+      top: 72%;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #image {
+      width: 85%;
+      left: 20px;
+      top: 120px;
+    }
+  }
+`;

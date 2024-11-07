@@ -53,6 +53,13 @@ align-content: center;
 gap: 30px;
 margin-left: 100px;
 margin-right: 100px;
+margin-top: 50px;
+@media (max-width: 800px) {
+    display: block;
+    flex-direction: column;
+    margin: 100px 20px;
+
+}
 `
 const Content = styled.div`
 width: 27%;
@@ -61,6 +68,10 @@ padding-left: 20px;
 padding-top: 3px;
 background-color:#FFFFFF ;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+@media (max-width: 800px) {
+    width: 100%;
+    margin-top: 30px;
+}
 button{
     background-color: #DFE3FF;
     width: 38px;
