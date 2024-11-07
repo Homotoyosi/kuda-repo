@@ -57,7 +57,9 @@ margin-top: 50px;
 @media (max-width: 800px) {
     display: block;
     flex-direction: column;
-    margin: 100px 20px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 `
@@ -71,6 +73,10 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
 @media (max-width: 800px) {
     width: 100%;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
 }
 button{
     background-color: #DFE3FF;

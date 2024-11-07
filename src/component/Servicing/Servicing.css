@@ -26,3 +26,28 @@
         font-size: 14px;
     }
     }
+    @media (max-width: 800px) {
+        .card2{
+            display: block;
+            flex-direction: column;
+            margin-top: 100px;
+
+            }
+            .card2 img{
+                width: 60%;
+                margin-left: 20px;
+            }
+            .servicebox{
+                width: 100%;
+                margin-top: 30px;
+                margin-left: 10px;
+                h1{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+    }
